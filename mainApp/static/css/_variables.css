@@ -1,0 +1,9 @@
+:root {
+    --font_body: 0.9rem;
+    --font_icon: 1.3rem;
+
+    --text_color: #222;
+    --btn_color: #333;
+    --white_color: #fff;
+    --color_principal: #898b00; 
+}

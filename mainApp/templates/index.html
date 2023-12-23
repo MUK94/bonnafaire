@@ -1,0 +1,284 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_variables.css' %}">
+    <title>Bonnafaire</title>
+</head>
+<body>
+    {% comment %} HEADER {% endcomment %}
+    <header class="header">
+        <div class="header-container">
+            <div class="header-item">
+                <a href="#" class="logo"><h2>Bonnafaire</h2></a>
+            </div>
+            <div class="header-item">
+                <div class="search-bar">
+                    <input type="search" name="search" id="search" placeholder="Search">
+                    <button class="btn btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="header-item">
+                <ul class="category-box">
+                    <li class="category">
+                        <a href="#" class="category-link"><i class="fa-solid fa-list"></i>Categories</a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-list">
+                                <li class="category-item"><a href="#">Laptop</a></li>
+                                <li class="category-item"><a href="#">Smartphones</a></li>
+                                <li class="category-item"><a href="#">Cosmetique</a></li>
+                                <li class="category-item"><a href="#">Mecanique</a></li>
+                                <li class="category-item"><a href="#">Cereales</a></li>
+                                <li class="category-item"><a href="#">Legumes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+                    
+            <div class="header-item">
+                <div class="user-actions">
+                    <a href="#" class="btn btn-login"><i class="fas fa-user"></i> Se connecter</a>
+                    <a href="#"  class="btn btn-register"><i class="fas fa-shopping-cart"></i> Deviens Vendeur</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% comment %} Main Content {% endcomment %}
+    <main class="main-section">
+        {% comment %} Product Card {% endcomment %}
+        <section class="service-listing">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'img/pc-1.jpg' %}" alt="">
+                    <div class="category-tags"><span >Laptop</span></div>
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                    <div class="owner-info">
+                        <div class="owner-box">
+                            <img src="{% static 'img/user.png' %}" alt="Owner Picture">
+                            <div class="owner-address">
+                                <p class="owner-name">Mouctar Balde</p>
+                                <p class="owner-location"><i class="fa-solid fa-location-dot"></i> Madina</p>
+                            </div>
+                        </div>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-price">
+                    <a href="#" class="buy-button">$499.99</a>
+                </div>
+            </div> 
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'img/iphone.jpg' %}" alt="">
+                    <div class="category-tags"><span >Smartphones</span></div>     
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                    <div class="owner-info">
+                        <div class="owner-box">
+                            <img src="{% static 'img/user.png' %}" alt="Owner Picture">
+                            <div class="owner-address">
+                                <p class="owner-name">Mouctar Balde</p>
+                                <p class="owner-location"><i class="fa-solid fa-location-dot"></i> Madina</p>
+                            </div>
+                        </div> 
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>   
+                        </div>
+                    </div>
+                              
+                </div>
+                <div class="product-price">
+                    <a href="#" class="buy-button">$499.99</a>
+                </div>
+            </div> 
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'img/cosmetic-2.jpg' %}" alt="">
+                    <div class="category-tags"><span>Cosmetique</span></div>
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                    <div class="owner-info">
+                        <div class="owner-box">
+                            <img src="{% static 'img/user.png' %}" alt="Owner Picture">
+                            <div class="owner-address">
+                                <p class="owner-name">Mouctar Balde</p>
+                                <p class="owner-location"><i class="fa-solid fa-location-dot"></i> Madina</p>
+                            </div>
+                        </div> 
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>   
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-price">
+                    <a href="#" class="buy-button">$499.99</a>
+                </div>
+            </div> 
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'img/mechanic-garage.jpg' %}" alt="">
+                    <div class="category-tags"><span >Mecanique</span></div>
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                    <div class="owner-info">
+                        <div class="owner-box">
+                            <img src="{% static 'img/user.png' %}" alt="Owner Picture">
+                            <div class="owner-address">
+                                <p class="owner-name">Mouctar Balde</p>
+                                <p class="owner-location"><i class="fa-solid fa-location-dot"></i> Madina</p>
+                            </div>
+                        </div> 
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>   
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-price">
+                    <a href="#" class="buy-button">$10.99</a>
+                </div>
+            </div>  
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'img/rice.jpg' %}" alt="">
+                    <div class="category-tags"><span >Cereales</span></div>    
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                    <div class="owner-info">
+                        <div class="owner-box">
+                            <img src="{% static 'img/user.png' %}" alt="Owner Picture">
+                            <div class="owner-address">
+                                <p class="owner-name">Mouctar Balde</p>
+                                <p class="owner-location"><i class="fa-solid fa-location-dot"></i> Madina</p>
+                            </div>
+                        </div> 
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>   
+                        </div>
+                    </div>
+                     
+                </div>
+                <div class="product-price">
+                    <a href="#" class="buy-button">$10.99</a>
+                </div>
+            </div>  
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'img/vegetable-1.jpg' %}" alt="">
+                    <div class="category-tags"><span >Legumes</span></div>
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                    <div class="owner-info">
+                        <div class="owner-box">
+                            <img src="{% static 'img/user.png' %}" alt="Owner Picture">
+                            <div class="owner-address">
+                                <p class="owner-name">Mouctar Balde</p>
+                                <p class="owner-location"><i class="fa-solid fa-location-dot"></i> Madina</p>
+                            </div>
+                        </div> 
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>   
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-price">
+                    <a href="#" class="buy-button">$10.99</a>
+                </div>
+            </div>      
+        </section>
+        <section class="load-more">
+            <a href="" class="btn">Voir Plus</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-up">
+            <div class="footer-logo">
+                <h2>BONNAFAIRE</h2>
+            </div>
+            <div class="footer-col footer-about">
+                <h2>Qui Sommes-Nous?</h2>
+                <a href="#">Tout sur Nous</a>
+                <a href="#">Deviens Vendeur</a>
+                <a href="#">Terms & Conditions</a>      
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-col">
+                <h2>Besoin d'aide?</h2>
+                <a href="#">FAQ Vendeurs</a>
+                <a href="#">FAQ Client</a>
+                <a href="#">Contactez-Nous</a>
+            </div>
+        </div>     
+        <div class="footer-down">
+            <div class="footer-down-row">
+                <h2>Newsletter</h2>
+                <p>Subscribe to our newsletter for updates!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email...">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-down-row">
+                <h2>Follow Us</h2>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Bonnafaire. All rights reserved. Designed by <a href="https://linkedin.com/in/thierno-dev">Mouctar</a></p>
+        </div>
+    </footer>
+</body>
+</html>
